@@ -49,8 +49,7 @@ public class Problema01_DoWhile {
             edad = entrada.nextInt();
             System.out.println("Ingrese la estatura del Jugador: ");
             estatura = entrada.nextDouble();
-            // limpio el buffer, para que se solicite al inicio de la cadena 
-            // el nombre y se repita el ciclo
+            // limpieza de buffer
             entrada.nextLine();
             // sumo la edad 
             suma_edad = suma_edad + edad;
@@ -70,19 +69,20 @@ public class Problema01_DoWhile {
             // la cadena acumula la edad ingresada
             cadenaB = String.format("%s%d\n",
                     cadenaB,
-                    edad);          
-            System.out.println("Ingrese (si) para terminar de ingresar datos");
-            salida = entrada.nextLine(); 
+                    edad);
+            System.out.println("Ingrese (si) para terminar de ingresar datos"
+            );
+            salida = entrada.nextLine();
             // si se ingresa si se sale del ciclo, caso contrario se repite
             if (salida.equals("si")) {
                 bandera = false;
             }
-            
+
         } while (bandera); //(bandera == true)
-        
-        promedio_edad = (double)suma_edad / contador;
+         
+        promedio_edad = (double) suma_edad / contador;
         promedio_estatura = suma_estatura / contador;
-        System.out.printf("%s%sPromedio de edades: %.2f\nPromedio de "
+        System.out.printf("%s%sPromedio de edades: %.1f\nPromedio de "
                 + "estaturas: %.2f\n",
                 cadenaA,
                 cadenaB,
