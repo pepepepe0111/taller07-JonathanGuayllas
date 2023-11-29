@@ -79,7 +79,7 @@ public class Problema01_DoWhile {
             }
 
         } while (bandera); //(bandera == true)
-         
+
         promedio_edad = (double) suma_edad / contador;
         promedio_estatura = suma_estatura / contador;
         System.out.printf("%s%sPromedio de edades: %.1f\nPromedio de "

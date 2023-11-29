@@ -40,7 +40,7 @@ public class Problema04_While {
             
             contador = contador + 1;
         }
-        System.out.printf("%s\n",cadenaA);
+        System.out.printf("%s\n", cadenaA);
     }
     
 }

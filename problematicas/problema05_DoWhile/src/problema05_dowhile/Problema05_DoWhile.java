@@ -19,28 +19,28 @@ public class Problema05_DoWhile {
         int denominador = 3;
         int contador = 0;
         String cadenaA = "1 ";
-        
+
         do {
-            if (contador %2 == 0){
-             numerador = +1 / denominador;
-             // cuando sea par va a ser -1
-             cadenaA = String.format("%s- 1/%d ", 
-                     cadenaA, 
-                     denominador);
+            if (contador % 2 == 0) {
+                numerador = +1 / denominador;
+                // cuando sea par va a ser -1
+                cadenaA = String.format("%s- 1/%d ",
+                        cadenaA,
+                        denominador);
             } else {
-            numerador = -1 / denominador;
-            // cuando sea impar va a ser +1
-            cadenaA = String.format("%s+ 1/%d ",
-                    cadenaA,
-                    denominador);
+                numerador = -1 / denominador;
+                // cuando sea impar va a ser +1
+                cadenaA = String.format("%s+ 1/%d ",
+                        cadenaA,
+                        denominador);
             }
             // sumo + 2 al denominador
             denominador = denominador + 2;
-            
+
             contador = contador + 1;
         } while (contador <= 6);
-        
-        System.out.printf("%s\n",cadenaA);
+
+        System.out.printf("%s\n", cadenaA);
     }
-    
+
 }
