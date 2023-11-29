@@ -20,7 +20,7 @@ public class Problema04_While {
         int contador = 0;
         String cadenaA = "1 ";
         
-        while (contador <= 8){
+        while (contador <= 6){
             // verifica si el contador es divisible para 2 
             if (contador %2 == 0){
              numerador = +1 / denominador;
